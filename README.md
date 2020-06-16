@@ -63,3 +63,16 @@ You can test that all libraries are installed properly by running:
 ```
 
 Tested on Ubuntu 14.04, CentOS/RHEL 6.3 and OSX
+
+The test doesn't work, but it can be used on Ubuntu 20.04 (cuda V10.1.243, cudnn-10.1-linux-x64-v7.6.5.32, gcc 8.4.0)
+```
+git clone https://github.com/nagadomi/distro.git ~/torch --recursive
+cd ~/torch
+./install-deps
+./clean.sh
+./update.sh
+```
+add line .bashrc és a .profile file (change user, linux user name)
+```
+. /home/user/torch/install/bin/torch-activate
+```
